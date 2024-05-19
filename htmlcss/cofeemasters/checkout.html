@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <header class="navBar">
+      <div class="nav">
+        <img class="nav-logo" src="coffee_masters_logo.png" />
+        <h1 class="nav-item">Coffee Masters</h1>
+      </div>
+    </header>
+
+    <main class="main-div">
+      <div class="checkout-grid">
+        <section class="checkout-left">
+          <div class="items box">
+            <h2 class="title">ITEMS</h2>
+            <div class="box-group">
+              <ul class="list-items">
+                <li class="list-item">
+                  <div class="item-quantity">1x</div>
+                  <div class="item-name">Cappucino</div>
+                  <div class="item-pice">$6.00</div>
+                  <ul class="item-options list-items">
+                    <li class="item-option">Light Foam</li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <div class="item-quantity">1x</div>
+                  <div class="item-name">Cappucino</div>
+                  <div class="item-pice">$6.00</div>
+                  <ul class="item-options list-items">
+                    <li class="item-option">Almond Milk</li>
+                    <li class="item-option">Double Espresso Shot</li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <div class="item-quantity">1x</div>
+                  <div class="item-name">Croissant</div>
+                  <div class="item-pice">$5.37</div>
+                  <ul class="item-options list-items">
+                    <li class="item-option">Butter</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="checkout-right">
+          <div class="name box">
+            <h2 class="title">NAME</h2>
+            <div class="box-group">
+              <label for="example" class="input-label">Name for order</label>
+              <input
+                id="example"
+                class="example-input"
+                placeholder="John Smith"
+              />
+            </div>
+          </div>
+
+          <div class="payment box">
+            <h2 class="title">PAYMENT</h2>
+            <div class="box-group">
+              <label for="example" class="input-label">Card Number</label>
+              <input
+                id="example"
+                class="example-input"
+                placeholder="1234 5678 9101 1121"
+              />
+            </div>
+            <div class="box-group">
+              <label for="example" class="input-label">CCV Number</label>
+              <input id="example" class="example-number" placeholder="001" />
+            </div>
+          </div>
+        </section>
+
+        <section class="checkout-bottom">
+          <div class="summary">
+            <div class="summary-item">
+              <span class="summary-label">Subtotal:</span>
+              <span class="summary-value">$17.37</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Tax:</span>
+              <span class="summary-value">$1.39</span>
+            </div>
+            <div class="summary-total">
+              <span class="summary-label">Total:</span>
+              <span class="summary-value">$18.76</span>
+            </div>
+          </div>
+          <button class="checkout-btn">Place Order</button>
+        </section>
+      </div>
+    </main>
+    <script src="checkout.js"></script>
+  </body>
+</html>
